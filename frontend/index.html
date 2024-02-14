@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISUCorp Test</title>
+  </head>
+  <body>
+    <header>
+      Ismael Triana Artola - ISU Corp Test Solution (Frontend)
+    </header>  
+    <Main>
+      <h1>User Dashboard</h1>
+      <section>       
+        <h2>List of Users</h2>
+        <div id="user-list">  
+          <picture id="users-loading-svg">
+            <img class="loading" alt="loading" src="./img/loading.svg">
+          </picture>           
+        </div>
+      </section>
+      <section>
+        <h2>Select a User by Id</h2>
+        <div id="user-action">          
+          <label for="id-selector">Id <input id="id-selector" min="1" value="1" type="number"></label>
+          <input type="button" onclick="GetUserById()" value="Get the user">
+          <picture id="id-loading-svg" class="hidden">
+            <img class="loading" alt="loading" src="./img/loading.svg">
+          </picture> 
+        </div>  
+      </section>
+    </Main>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
